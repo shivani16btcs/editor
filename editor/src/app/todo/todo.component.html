@@ -1,0 +1,18 @@
+<div class="jumbotron" style="padding:20px 0px" >
+    <h4 class="text-center"> editor </h4>
+</div>
+
+
+<div class="NgxEditor__Wrapper">
+    <ngx-editor-menu [editor]="editor"> </ngx-editor-menu>
+    <ngx-editor
+      [editor]="editor"
+      [(ngModel)]="html"
+    >
+    </ngx-editor>
+</div>
+ <br/>
+<div class="card-button">
+    <button type="button"
+        class="btn btn-secondary" (click)="saveTemplate()">SAVE</button>
+</div>
